@@ -212,10 +212,74 @@ public class demoConst{
     System.out.println(num) // 输出：1705032704  数据明显不是我们想要的结果
     ```
 
-  - ![1605019505498](.\src\main\resources\static\assets\强制类型转换数据溢出.png)
+  - 数据溢出式例![1605019505498](.\src\main\resources\static\assets\强制类型转换数据溢出.png)
 
 - byte、short、char这三种类型都可以发生数学运算，例如加法"+"
 
 - byte、short、char这三种类型运算的时候，都会被首先提升成为 int 类型然后在进行运算 
 
 - boolean 类型不能发生数据类型转换
+
+## DEMO-9 ASCII码表
+
+### 1、ASCII码表
+
+- ASCII码表 （American Standard  Code for Information InterCahnge）
+- 三个关键码 
+  - 48  --->   0
+  - 65  --->   A
+  - 97  --->   a
+
+## DEMO-10 运算符
+
+### 1、算数运算符
+
+![1605429058698](.\src\main\resources\static\assets\算数运算符.png)
+
+- `注意事项：`
+
+  - `一旦运算当中数据类型不同，那么结果将会是数据类型大的那种。`
+
+  - `对于数值来说` `+`  `就是加法`
+
+  - `对于` `char` `类型来说，在计算之前，char类型会被提升成为int 然后在计算，char 与 int 之间的运算关系对照ASCII 与 Unicode 码表 `
+
+  - `对于字符串来说的话，由于字符串是引用类型 用` `+` `进行运算的话 则是拼接的效果,而结果则是字符串类型`
+
+    ```java
+    // 例如：
+    System.out.println("hello" + 3) // 输出 hello3
+    ```
+
+  - `自增 与 自减`
+
+    - `++num 或者 --num 先加后用`
+
+    - `num++ 或者 num-- 先用后加 `
+
+    - ```java
+      // 例如 前自增与后自增 自减一致效果
+      int num = 10;
+      System.out.println(++num); // 输出：11;
+      System.out.println(num++); // 输出：11;
+      System.out.println(num);   // 输出：12;
+      ```
+
+### 2、赋值运算符
+
+![1605431019816](.\src\main\resources\static\assets\赋值运算符.png)
+
+- `注意事项:`
+  - `只有变量才能使用赋值运算符，常量不能进行赋值`
+  - `当类型不同时，使用复合赋值运算符会进行一个隐式强制类型转换。`
+
+### 3、比较运算符
+
+![1605431629031](.\src\main\resources\static\assets\比较运算符.png)
+
+- 比较运算符是两个数据之间进行比较运算，运算结果都是布尔值 `true` 或者 `false`
+
+### 4、逻辑运算符TODO
+
+### 5、三元运算符TODO
+
