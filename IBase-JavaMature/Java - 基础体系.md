@@ -267,7 +267,7 @@ public class demoConst{
 
 ### 2、赋值运算符
 
-![1605431019816](.\src\main\resources\static\assets\赋值运算符.png)
+![1605431019816](./src/main/resources/static/assets/赋值运算符.png)
 
 - `注意事项:`
   - `只有变量才能使用赋值运算符，常量不能进行赋值`
